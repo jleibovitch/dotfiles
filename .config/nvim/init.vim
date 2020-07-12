@@ -1,10 +1,11 @@
 inoremap kj <Esc>
+let mapleader = " "
+
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
-source $HOME/.config/nvim/config.vim
 source $HOME/.config/nvim/plugins.vim
+source $HOME/.config/nvim/config.vim
 source $HOME/.config/nvim/plug-config/coc.vim
-
 
 if (has('termguicolors'))
   set termguicolors
